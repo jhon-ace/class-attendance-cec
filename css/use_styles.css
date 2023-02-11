@@ -1,0 +1,158 @@
+body
+        {
+			background: url("../images/cec_bg.jpg") no-repeat center center fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
+
+    	}
+        input, .form-control{
+            border-color: none;
+            color:green;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-bottom: 1px solid black !important;
+            border: 0;
+            border-radius: 0;
+            text-decoration: none;
+            background: transparent;
+            
+        }
+
+        .form-control:focus 
+        {
+            border-color: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: 0;
+            border-bottom: 1px solid black;
+            border-radius: 0;
+            text-decoration: none;
+            background: transparent;
+            
+            
+        }
+        label {
+            position:relative;
+            display:inline-block;
+        }
+
+    	span {
+            padding:10px;
+            pointer-events: none;
+            position:absolute;
+            left:0;
+            top:0;
+            transition: 0.2s;
+            transition-timing-function: ease;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            opacity:0.5;
+        }
+        
+       
+
+        .form-control:not(:placeholder-shown) + span {
+            opacity:1;
+            transform: scale(0.75) translateY(-100%) translateX(-30px);
+            
+    }
+
+    .ace{
+        background-color: rgba(245, 245, 245, 1);
+        
+    }
+    .studentRef{
+         background-color: rgba(245, 245, 245, 0.9);
+    }
+
+    .hover-card:hover
+    {
+    border-color: #33adff;
+    color:#33adff !important;
+
+    }
+    .back-to-top 
+    {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 64px;
+    height: 64px;
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    background-image: url(images/top.png);
+    }
+
+    .back-to-top:hover
+    {
+    opacity: 0.7;
+    }
+    .fa-1x {
+    font-size: 1.5rem;
+    }
+    .navbar-toggler.toggler-example {
+    cursor: pointer;
+    }
+    .dark-blue-text {
+    color: #0A38F5;
+    }
+    .dark-pink-text {
+    color: #AC003A;
+    }
+    .dark-amber-text {
+    color: #ff6f00;
+    }
+    .dark-teal-text {
+    color: #004d40;
+    }
+
+       .lds-hourglass {
+          position: fixed;
+          z-index: 9999;
+          top:0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: #fff;
+        }
+        .lds-hourglass:before {
+          content: " ";
+          position: fixed;
+          border-radius: 50%;
+          top:calc(50% - 30px);
+          left: calc(50% - 30px);
+          width: 80px;
+          height: 80px;
+          margin: 8px;
+          box-sizing: border-box;
+          border: 32px solid #fff;
+          border-color: #fff #F89911 #fff #F5D218;
+          animation: lds-hourglass 1.2s infinite;
+
+        }
+
+
+
+
+
+
+
+        @keyframes lds-hourglass {
+          0% {
+            transform: rotate(0);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+          }
+          50% {
+            transform: rotate(900deg);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+
+          }
+          100% {
+            transform: rotate(1800deg);
+          }
+        }
